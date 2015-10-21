@@ -1,0 +1,77 @@
+<!-- 
+Desarrollado con <3
+Nombre		:	Formularios de Consultas tipo C
+Fecha		:	21102015 16.58
+Versión		:	1.0
+Frontend	: 	Jhonattan Rodríguez
+changelog	: 	...
+Framework	:	Bootstrap 3.0
+inHouse		:	Registraduría Nacional del Estado Civil
+-->
+<style>
+.avisos_importantes {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+.media__image { 
+  display: block; 
+}
+
+.banner_principal{
+  padding: 8px;
+  padding-left: 22px;
+}
+hr{
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+
+.panel-default-full{
+  width: 102% !important;
+  border: 2px solid #f37934 !important;
+  border-radius: 2px !important;
+  margin-top: 0px !important;
+  margin-bottom: 2px !important;
+}
+
+.panel-default-full > .panel-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+}
+
+.btn-success-alerta {
+    color: #f5f5f5;
+    background-color: #f37934 !important;
+    border: 0px solid !important;
+    border-radius: 0px !important;
+}
+
+.btn-success-alerta:hover {
+    color: #f5f5f5;
+    cursor: pointer;
+    background-color: #ff9458 !important;
+    border: 0px solid !important;
+    border-radius: 0px !important;
+}
+
+</style>
+
+<div class="panel panel-default-full">
+	<div class="panel-heading">                                
+		<div class="row-fluid user-row">
+			<img src="/IMG/listado_cedulas_excluidas_inscripcion_2015.png" class="img-responsive" alt="Jurados de Votacion 2015"/>
+		</div>
+	</div>
+	<div class="panel-body">
+		<form action="http://www3.registraduria.gov.co/censo/_censoresultadoTras.php" method="GET" name="buscarCenso"  target="_blank" class="form-signin">
+			<label class="panel-login">
+				<div class="login_result"></div>
+			</label>
+			<input class="form-control" placeholder=">.. No. Documento" autocomplete="off" maxlength="11" name="nCedula" id="phone" type="tel"><br>
+			<input class="btn btn-md btn-success-alerta btn-block" type="submit" value="Buscar" name="buscar4" id="buscar4">
+			<p class="help-block"><mark>* Si su cédula está en el listado deberá sufragar en el último lugar donde estaba habilitado para votar.</mark></p>
+		</form>
+	</div>
+</div>
